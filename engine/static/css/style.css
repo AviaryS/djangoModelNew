@@ -1,0 +1,10 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.edit__form {
+    display: flex;
+    flex-direction: column;
+}

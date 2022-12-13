@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        {% for post in posts.values %}
+            <div>
+                <p>Заголовок: {{ post.title }}</p>
+                <p>Текст: {{ post.content }}</p>
+                <p>Дата: {{ post.date }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
